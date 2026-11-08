@@ -3,206 +3,193 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gotors</title>
-    <meta name="description" content="Portafolio simple de Diego Torres, gotors." />
+    <title>gotors — Diego Torres</title>
+    <meta
+      name="description"
+      content="Diego Torres (gotors) builds software, explores AI and writes about technical topics. Projects, experience and stack."
+    />
+    <meta name="theme-color" content="#050505" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:title" content="gotors — Diego Torres" />
+    <meta
+      property="og:description"
+      content="Builds software, explores AI and writes about technical topics."
+    />
+    <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="site-nav-sticky" id="stickyNav" aria-hidden="true">
-      <div class="site-nav-sticky-inner">
-        <h2>DIEGRAL</h2>
-        <div class="site-social" aria-label="Social links">
-          <a href="https://www.linkedin.com/in/diego-tv" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/diegraldev" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="mailto:diegoantv31@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://x.com/diegraldev" target="_blank" rel="noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="blog/" aria-label="Blog"><i class="fa-solid fa-feather"></i></a>
-        </div>
-      </div>
-    </nav>
+    <div class="glow" aria-hidden="true"></div>
 
-    <header class="site-title" id="siteHeader">
-      <h1>DIEGRAL</h1>
-      <div class="site-social" aria-label="Social links">
-        <a href="https://www.linkedin.com/in/diego-tv" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/diegraldev" target="_blank" rel="noreferrer" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="mailto:diegoantv31@gmail.com" aria-label="Email">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="https://x.com/diegraldev" target="_blank" rel="noreferrer" aria-label="X">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="blog/" class="btn-blog-icon" aria-label="Blog">
-          <i class="fa-solid fa-feather"></i>
-        </a>
-      </div>
-    </header>
-    <hr class="divider" />
-
-    <main class="page-shell">
-      <header class="header">
-        <div class="brand-row">
-          <div class="avatar">
-            <img src="public/me.png" alt="Diego Torres" class="avatar-img" />
-          </div>
+    <main class="shell">
+      <header class="intro fade" style="animation-delay: 0s">
+        <div class="identity">
+          <img class="avatar" src="public/me.png" alt="Diego Torres" />
           <div>
-            <h1 class="name">Hi I'm Diego!</h1>
-             <p>
-          I build software, explore AI, and write about technical topics. This page
-          is a compact developer portfolio with projects, stack and short posts.
-        </p>
+            <h1 class="name">gotors</h1>
+            <p class="tagline">builds software, explores ai</p>
           </div>
         </div>
+        <p class="bio">
+          I'm Diego Torres. I build software, explore AI and write about technical
+          topics — web apps, mobile apps and Linux tooling. Currently studying Data
+          Science &amp; AI at ESPOL.
+        </p>
       </header>
 
-
-
-      <section id="experience-timeline">
-        <h2>Experience & Education</h2>
-        <div class="timeline-container">
-          <div class="timeline-line-bar"></div>
-          <div class="timeline">
-
-            <article class="timeline-item">
-              <div class="tl-date">2026–Present</div>
-              <div class="tl-dot"></div>
-              <div class="tl-logo-wrap">
-                <img src="public/espol.svg" alt="ESPOL logo" class="tl-logo" />
-              </div>
-              <div class="tl-content">
-                <p><strong>ESPOL</strong> —  BSc Data Science &amp; Artificial Intelligence</p>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="tl-date">2020–2026</div>
-              <div class="tl-dot"></div>
-              <div class="tl-logo-wrap">
-                <img src="public/UETS.svg" alt="UETS logo" class="tl-logo" />
-              </div>
-              <div class="tl-content">
-                <p><strong>UETS</strong> — Tech HSD Information Technology</p>
-              </div>
-            </article>
-
+      <section class="section fade" id="experience" style="animation-delay: 0.1s">
+        <div class="section-head">
+          <h2 class="section-title">experience</h2>
+          <span class="section-note">01</span>
+        </div>
+        <div class="rows">
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">ESPOL</span>
+              <span class="row-meta">— BSc Data Science &amp; Artificial Intelligence</span>
+            </div>
+            <span class="row-side">2026 — now</span>
+          </div>
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">UETS</span>
+              <span class="row-meta">— Tech HSD Information Technology</span>
+            </div>
+            <span class="row-side">2020 — 2026</span>
           </div>
         </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <details class="project-group">
-          <summary class="project-group-summary">
-            <span>Web Dev</span>
-            <i class="fa-solid fa-chevron-down project-chevron"></i>
-          </summary>
-          <div class="project-group-body">
-              <div class="project-list">
-                <a href="https://tecnibus.vercel.app" target="_blank" rel="noopener noreferrer" class="project-item">
-                  <span class="project-name">tecnibus.vercel.app</span>
-                  <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
-                </a>
-                <a href="https://gavanti-landing.vercel.app" target="_blank" rel="noopener noreferrer" class="project-item">
-                  <span class="project-name">gavanti-landing.vercel.app</span>
-                  <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
-                </a>
-                <a href="https://github.com/diegraldev/better-zen" target="_blank" rel="noopener noreferrer" class="project-item">
-                  <span class="project-name">better-zen</span>
-                  <span class="project-meta">— glassmorphic userChrome for Zen Browser</span>
-                  <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
-                </a>
-              </div>
-          </div>
-        </details>
+      <section class="section fade" id="projects" style="animation-delay: 0.15s">
+        <div class="section-head">
+          <h2 class="section-title">projects</h2>
+          <span class="section-note">02</span>
+        </div>
 
-        <details class="project-group">
-          <summary class="project-group-summary">
-            <span>Linux Widgets</span>
-            <i class="fa-solid fa-chevron-down project-chevron"></i>
-          </summary>
-          <div class="project-group-body">
-            <div class="project-list">
-              <a href="https://github.com/diegraldev/PlasmaKde-Dynamic-Islands" target="_blank" rel="noopener noreferrer" class="project-item">
-                <span class="project-name">PlasmaKde-Dynamic-Islands</span>
-                <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
-              </a>
-              <a href="https://github.com/diegraldev/rgb-backlight" target="_blank" rel="noopener noreferrer" class="project-item">
-                <span class="project-name">rgb-backlight</span>
-                <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
-              </a>
+        <p class="group-label">web</p>
+        <div class="rows">
+          <a
+            class="row"
+            href="https://tecnibus.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">tecnibus.vercel.app</span>
             </div>
-          </div>
-        </details>
-
-        <details class="project-group">
-          <summary class="project-group-summary">
-            <span>React Native</span>
-            <i class="fa-solid fa-chevron-down project-chevron"></i>
-          </summary>
-          <div class="project-group-body">
-
-            <div class="project-subgroup">
-              <span class="project-tag">App</span>
-              <div class="project-list">
-                <div class="project-item project-item--plain">
-                  <span class="project-name">Tecnibus</span>
-                  <span class="project-meta">— Mobile app · More info coming soon</span>
-                </div>
-              </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a
+            class="row"
+            href="https://gavanti-landing.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">gavanti-landing.vercel.app</span>
             </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a
+            class="row"
+            href="https://github.com/diegraldev/better-zen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">better-zen</span>
+              <span class="row-meta">— glassmorphic userChrome for Zen Browser</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+        </div>
 
-          </div>
-        </details>
+        <p class="group-label">linux</p>
+        <div class="rows">
+          <a
+            class="row"
+            href="https://github.com/diegraldev/PlasmaKde-Dynamic-Islands"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">PlasmaKde-Dynamic-Islands</span>
+              <span class="row-meta">— dynamic island for KDE Plasma 6</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a
+            class="row"
+            href="https://github.com/diegraldev/rgb-backlight"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">rgb-backlight</span>
+              <span class="row-meta">— keyboard &amp; mouse RGB control for KDE Plasma</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+        </div>
 
-      </section>
-
-      <section>
-        <h2>Stack</h2>
-        <div class="stack-grid">
-          <div class="stack-group">
-            <span class="project-tag">Web Development</span>
-            <p class="stack-items">HTML · CSS · JavaScript · Next.js · Vite · Tailwind</p>
-          </div>
-          <div class="stack-group">
-            <span class="project-tag">App Development</span>
-            <p class="stack-items">React Native · Expo</p>
-          </div>
-          <div class="stack-group">
-            <span class="project-tag">Tools & DevOps</span>
-            <p class="stack-items">Git · GitHub · Vercel</p>
-          </div>
-          <div class="stack-group">
-            <span class="project-tag">AI & ML</span>
-            <p class="stack-items">Python · PyTorch · TensorFlow · Claude · Cursor</p>
+        <p class="group-label">mobile</p>
+        <div class="rows">
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">Tecnibus</span>
+              <span class="row-meta">— React Native app · more info coming soon</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <footer class="footer">
-        <p>Available for projects, writing and collaborations <br/> diegoantv31@gmail.com</p>
+      <section class="section fade" id="stack" style="animation-delay: 0.2s">
+        <div class="section-head">
+          <h2 class="section-title">stack</h2>
+          <span class="section-note">03</span>
+        </div>
+        <div class="stack">
+          <span class="stack-key">web</span>
+          <span class="stack-val">HTML · CSS · JavaScript · Next.js · Vite · Tailwind</span>
+          <span class="stack-key">app</span>
+          <span class="stack-val">React Native · Expo</span>
+          <span class="stack-key">tools</span>
+          <span class="stack-val">Git · GitHub · Vercel</span>
+          <span class="stack-key">ai / ml</span>
+          <span class="stack-val">Python · PyTorch · TensorFlow · Claude · Cursor</span>
+        </div>
+      </section>
+
+      <footer class="site-footer fade" style="animation-delay: 0.25s">
+        <a href="https://github.com/diegraldev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">gh</a>
+        <a href="https://x.com/diegraldev" target="_blank" rel="noopener noreferrer" aria-label="X">x</a>
+        <a href="https://www.linkedin.com/in/diego-tv" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">li</a>
+        <a href="mailto:diegoantv31@gmail.com" aria-label="Email">mail</a>
+        <a href="blog/">blog</a>
+        <span class="footer-note">available for work</span>
       </footer>
     </main>
-    <script>
-      const nav = document.getElementById('stickyNav');
-      const header = document.getElementById('siteHeader');
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          const show = !entry.isIntersecting;
-          nav.classList.toggle('visible', show);
-          nav.setAttribute('aria-hidden', String(!show));
-        },
-        { threshold: 0 }
-      );
-      observer.observe(header);
-    </script>
   </body>
 </html>

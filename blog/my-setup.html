@@ -4,157 +4,280 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The software I use — gotors blog</title>
-    <meta name="description" content="The software I use every day: Fedora KDE, my apps and my Zen browser setup." />
+    <meta
+      name="description"
+      content="The software I use every day: Fedora KDE, my apps and my Zen browser setup."
+    />
+    <meta name="theme-color" content="#050505" />
+    <meta name="color-scheme" content="dark" />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <header class="site-title has-back">
-      <a href="./" class="back-home" aria-label="Back to blog">
-        <i class="fa-solid fa-arrow-left"></i>
-      </a>
-      <h1>DIEGRAL</h1>
-    </header>
-    <hr class="divider" />
+    <div class="glow" aria-hidden="true"></div>
 
-    <main class="page-shell">
-      <section>
-        <p class="blog-post-date"><strong>2026-10-26</strong></p>
+    <main class="shell shell--post">
+      <a class="back fade" href="./" style="animation-delay: 0s">
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path
+            fill-rule="evenodd"
+            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        blog
+      </a>
+
+      <header class="post-head fade" style="animation-delay: 0.05s">
         <h1>The software I use</h1>
+        <time datetime="2026-10-26">2026-10-26</time>
+      </header>
+
+      <article class="prose fade" style="animation-delay: 0.1s">
         <p>
           A quick rundown of my daily setup: the system, the apps I actually open
           every day and how my browser is configured. Everything linked to its
           site or GitHub.
         </p>
-      </section>
 
-      <section>
-        <h2>System</h2>
-        <div class="project-list">
-          <a href="https://fedoraproject.org/kde" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">Fedora KDE</span>
-            <span class="project-meta">— my daily driver</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+        <h2>system</h2>
+        <div class="rows">
+          <a
+            class="row"
+            href="https://fedoraproject.org/kde"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">Fedora KDE</span>
+              <span class="row-meta">— my daily driver</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
         </div>
-        <img src="../public/desktop.png" alt="My Fedora KDE Plasma desktop" style="width: 100%; margin-top: 12px; border-radius: 10px; border: 1px solid var(--line);" />
-      </section>
+        <img
+          src="../public/desktop.png"
+          alt="My Fedora KDE Plasma desktop"
+          loading="lazy"
+        />
 
-      <section>
-        <h2>Apps</h2>
-        <div class="project-list">
-          <a href="https://getopenscreen.com/" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">OpenScreen</span>
-            <span class="project-meta">— screen recording, polished demos</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+        <h2>apps</h2>
+        <div class="rows">
+          <a class="row" href="https://getopenscreen.com/" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">OpenScreen</span>
+              <span class="row-meta">— screen recording, polished demos</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
-          <a href="https://opencode.ai" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">opencode</span>
-            <span class="project-meta">— terminal AI coding agent</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+          <a class="row" href="https://opencode.ai" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">opencode</span>
+              <span class="row-meta">— terminal AI coding agent</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
-          <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">VS Code</span>
-            <span class="project-meta">— main editor</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+          <a class="row" href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">VS Code</span>
+              <span class="row-meta">— main editor</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
-          <a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">Hermes</span>
-            <span class="project-meta">— open source AI agent (Nous Research)</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+          <a
+            class="row"
+            href="https://github.com/NousResearch/hermes-agent"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">Hermes</span>
+              <span class="row-meta">— open source AI agent (Nous Research)</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
-          <a href="https://starship.rs" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">Starship</span>
-            <span class="project-meta">— cross-shell prompt</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+          <a class="row" href="https://starship.rs" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">Starship</span>
+              <span class="row-meta">— cross-shell prompt</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
-          <a href="https://github.com/fastfetch-cli/fastfetch" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">fastfetch</span>
-            <span class="project-meta">— system info for the terminal</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+          <a
+            class="row"
+            href="https://github.com/fastfetch-cli/fastfetch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">fastfetch</span>
+              <span class="row-meta">— system info for the terminal</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
-          <a href="https://xournalpp.github.io" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">Xournal++</span>
-            <span class="project-meta">— handwritten notes &amp; PDF annotation</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+          <a
+            class="row"
+            href="https://xournalpp.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">Xournal++</span>
+              <span class="row-meta">— handwritten notes &amp; PDF annotation</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
-          <a href="https://www.stremio.com" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">Stremio</span>
-            <span class="project-meta">— movies &amp; series</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+          <a class="row" href="https://www.stremio.com" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">Stremio</span>
+              <span class="row-meta">— movies &amp; series</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
-          <a href="https://github.com/crmne/spotifast" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">Spotifast</span>
-            <span class="project-meta">— lightweight native Spotify client (Rust)</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+          <a
+            class="row"
+            href="https://github.com/crmne/spotifast"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">Spotifast</span>
+              <span class="row-meta">— lightweight native Spotify client (Rust)</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
-          <a href="https://localsend.org" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">LocalSend</span>
-            <span class="project-meta">— file sharing between devices</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+          <a class="row" href="https://localsend.org" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">LocalSend</span>
+              <span class="row-meta">— file sharing between devices</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
         </div>
-      </section>
 
-      <section>
-        <h2>Browser</h2>
-        <div class="project-list">
-          <a href="https://zen-browser.app" target="_blank" rel="noopener noreferrer" class="project-item">
-            <span class="project-name">Zen Browser</span>
-            <span class="project-meta">— Firefox-based, customizable</span>
-            <i class="fa-solid fa-arrow-up-right-from-square project-ext"></i>
+        <h2>browser</h2>
+        <div class="rows">
+          <a
+            class="row"
+            href="https://zen-browser.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="row-main">
+              <span class="row-name">Zen Browser</span>
+              <span class="row-meta">— Firefox-based, customizable</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
           </a>
         </div>
-        <details class="project-group">
-          <summary class="project-group-summary">
-            <span>Extensions</span>
-            <i class="fa-solid fa-chevron-down project-chevron"></i>
-          </summary>
-          <div class="project-group-body">
-            <div class="project-list">
-              <div class="project-item project-item--plain">
-                <span class="project-name">Bitwarden</span>
-                <span class="project-meta">— password manager</span>
-              </div>
-              <div class="project-item project-item--plain">
-                <span class="project-name">Video DownloadHelper</span>
-                <span class="project-meta">— download videos from any site</span>
-              </div>
-              <div class="project-item project-item--plain">
-                <span class="project-name">Librezam</span>
-                <span class="project-meta">— open source song recognition (Shazam)</span>
-              </div>
-              <div class="project-item project-item--plain">
-                <span class="project-name">uBlock Origin</span>
-                <span class="project-meta">— ad blocker</span>
-              </div>
-              <div class="project-item project-item--plain">
-                <span class="project-name">Bonjourr</span>
-                <span class="project-meta">— minimalist new tab page</span>
-              </div>
-              <div class="project-item project-item--plain">
-                <span class="project-name">PocketTube</span>
-                <span class="project-meta">— YouTube subscription manager</span>
-              </div>
-              <div class="project-item project-item--plain">
-                <span class="project-name">LeechBlock NG</span>
-                <span class="project-meta">— site blocking &amp; focus</span>
-              </div>
-              <div class="project-item project-item--plain">
-                <span class="project-name">Force Copy</span>
-                <span class="project-meta">— re-enable copy on restricted pages</span>
-              </div>
+
+        <h2>extensions</h2>
+        <div class="rows">
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">Bitwarden</span>
+              <span class="row-meta">— password manager</span>
             </div>
           </div>
-        </details>
-      </section>
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">Video DownloadHelper</span>
+              <span class="row-meta">— download videos from any site</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">Librezam</span>
+              <span class="row-meta">— open source song recognition (Shazam)</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">uBlock Origin</span>
+              <span class="row-meta">— ad blocker</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">Bonjourr</span>
+              <span class="row-meta">— minimalist new tab page</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">PocketTube</span>
+              <span class="row-meta">— YouTube subscription manager</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">LeechBlock NG</span>
+              <span class="row-meta">— site blocking &amp; focus</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-main">
+              <span class="row-name">Force Copy</span>
+              <span class="row-meta">— re-enable copy on restricted pages</span>
+            </div>
+          </div>
+        </div>
+      </article>
 
-      <footer class="footer">
-        <p>Available for projects, writing and collaborations <br/> diegoantv31@gmail.com</p>
+      <footer class="site-footer fade" style="animation-delay: 0.15s">
+        <a href="./">back</a>
+        <a href="https://github.com/diegraldev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">gh</a>
+        <a href="https://x.com/diegraldev" target="_blank" rel="noopener noreferrer" aria-label="X">x</a>
+        <a href="mailto:diegoantv31@gmail.com" aria-label="Email">mail</a>
       </footer>
     </main>
   </body>

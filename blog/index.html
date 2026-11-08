@@ -3,54 +3,55 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>gotors — blog</title>
-    <meta name="description" content="Blog simple de Diego Torres, gotors." />
+    <title>blog — gotors</title>
+    <meta name="description" content="Notes on development, AI and personal projects by Diego Torres." />
+    <meta name="theme-color" content="#050505" />
+    <meta name="color-scheme" content="dark" />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <header class="site-title has-back">
-      <a href="../" class="back-home" aria-label="Back to home">
-        <i class="fa-solid fa-arrow-left"></i>
-      </a>
-      <h1>DIEGRAL</h1>
-    </header>
-    <hr class="divider" />
+    <div class="glow" aria-hidden="true"></div>
 
-    <main class="page-shell">
-      <section>
-        <h1>Blog</h1>
-        <p>
-          Short notes, articles and updates about development, AI and personal projects.
+    <main class="shell shell--wide">
+      <header class="page-head fade" style="animation-delay: 0s">
+        <h1 class="page-title">blog</h1>
+        <p class="page-sub">
+          Short notes, articles and updates about development, AI and personal
+          projects.
         </p>
-      </section>
+      </header>
 
-      <section>
-        <h2>Posts</h2>
-        <div class="blog-post-item">
-          <p class="blog-post-date"><strong>2026-10-26</strong></p>
-          <p class="blog-post-title"><a href="my-setup.html">The software I use</a></p>
-          <p class="blog-post-desc">My daily setup: Fedora KDE, the apps I open every day and my Zen browser with its extensions. All linked to their site or GitHub.</p>
+      <div class="rows fade" style="animation-delay: 0.05s">
+        <a class="post-row" href="my-setup.html">
+          <span class="post-title">The software I use</span>
+          <span class="post-date">2026-10-26</span>
+          <span class="underline"></span>
+        </a>
+        <a
+          class="post-row"
+          href="https://medium.com/@diegoantv31/beyond-certainty-d927c3241011"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="post-title">Beyond Certainty</span>
+          <span class="post-date">2026-03-08</span>
+          <span class="underline"></span>
+        </a>
+        <div class="post-row">
+          <span class="post-title">Welcome to the blog</span>
+          <span class="post-date">2026-02-15</span>
         </div>
+      </div>
 
-        <div class="blog-post-item">
-          <p class="blog-post-date"><strong>2026-03-08</strong></p>
-          <p class="blog-post-title"><a href="https://medium.com/@diegoantv31/beyond-certainty-d927c3241011" target="_blank" rel="noopener noreferrer">Beyond Certainty <i class="fa-solid fa-arrow-up-right-from-square blog-ext-icon"></i></a></p>
-          <p class="blog-post-desc">On the limits of human understanding, inherited belief, and why intellectual progress demands active inquiry over passive acceptance.</p>
-        </div>
-
-        <div class="blog-post-item">
-          <p class="blog-post-date"><strong>2026-02-15</strong></p>
-          <p class="blog-post-title">Welcome to the blog.</p>
-          <p class="blog-post-desc">A place for short notes, articles and updates on development, AI and personal projects.</p>
-        </div>
-
-      </section>
-
+      <footer class="site-footer fade" style="animation-delay: 0.1s">
+        <a href="../">back</a>
+        <a href="https://github.com/diegraldev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">gh</a>
+        <a href="https://x.com/diegraldev" target="_blank" rel="noopener noreferrer" aria-label="X">x</a>
+        <a href="https://www.linkedin.com/in/diego-tv" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">li</a>
+        <a href="mailto:diegoantv31@gmail.com" aria-label="Email">mail</a>
+      </footer>
     </main>
   </body>
 </html>
