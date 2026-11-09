@@ -74,7 +74,7 @@ p {
   margin: 0;
 }
 
-/* ── Ambient glow ── */
+/* ── Ambient background ── */
 .glow {
   position: fixed;
   top: 50%;
@@ -87,6 +87,16 @@ p {
   opacity: 0.03;
   pointer-events: none;
   z-index: 0;
+}
+
+/* ── Interactive dot mesh ── */
+.mesh {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* ── Layout ── */
@@ -115,13 +125,12 @@ p {
 }
 
 .avatar {
-  width: 44px;
-  height: 44px;
+  width: 72px;
+  height: 72px;
   border-radius: 999px;
   object-fit: cover;
-  border: 1px solid var(--line-strong);
   filter: grayscale(1);
-  opacity: 0.85;
+  opacity: 0.9;
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
@@ -273,18 +282,6 @@ a.row:hover .arrow {
 
 a.row:hover .underline {
   width: 100%;
-}
-
-/* ── Group label (projects) ── */
-.group-label {
-  margin: 1.5rem 0 0.25rem;
-  font-size: 0.75rem;
-  color: var(--muted);
-  letter-spacing: 0.02em;
-}
-
-.group-label:first-child {
-  margin-top: 0;
 }
 
 /* ── Stack ── */

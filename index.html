@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>gotors — Diego Torres</title>
+    <title>diegral — Diego Torres</title>
     <meta
       name="description"
-      content="Diego Torres (gotors) builds software, explores AI and writes about technical topics. Projects, experience and stack."
+      content="Diego Torres (diegral) — 18yo studying data science and AI engineering. Projects, stack and blog."
     />
     <meta name="theme-color" content="#050505" />
     <meta name="color-scheme" content="dark" />
-    <meta property="og:title" content="gotors — Diego Torres" />
+    <meta property="og:title" content="diegral — Diego Torres" />
     <meta
       property="og:description"
-      content="Builds software, explores AI and writes about technical topics."
+      content="18yo, studying data science and AI engineering. Figuring out deep learning, into agents and open source."
     />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -22,20 +22,20 @@
   </head>
   <body>
     <div class="glow" aria-hidden="true"></div>
+    <canvas class="mesh" id="mesh" aria-hidden="true"></canvas>
 
     <main class="shell">
       <header class="intro fade" style="animation-delay: 0s">
         <div class="identity">
           <img class="avatar" src="public/me.png" alt="Diego Torres" />
           <div>
-            <h1 class="name">gotors</h1>
+            <h1 class="name">diegral</h1>
             <p class="tagline">builds software, explores ai</p>
           </div>
         </div>
         <p class="bio">
-          I'm Diego Torres. I build software, explore AI and write about technical
-          topics — web apps, mobile apps and Linux tooling. Currently studying Data
-          Science &amp; AI at ESPOL.
+          18yo, studying data science &amp; AI engineering. Figuring out deep
+          learning, into agents and open source.
         </p>
       </header>
 
@@ -68,16 +68,16 @@
           <span class="section-note">02</span>
         </div>
 
-        <p class="group-label">web</p>
         <div class="rows">
           <a
             class="row"
-            href="https://tecnibus.vercel.app"
+            href="https://github.com/diegraldev/TecniBus"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div class="row-main">
-              <span class="row-name">tecnibus.vercel.app</span>
+              <span class="row-name">TecniBus</span>
+              <span class="row-meta">— React Native app</span>
             </div>
             <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -87,12 +87,13 @@
           </a>
           <a
             class="row"
-            href="https://gavanti-landing.vercel.app"
+            href="https://github.com/diegraldev/AgentHQ"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div class="row-main">
-              <span class="row-name">gavanti-landing.vercel.app</span>
+              <span class="row-name">AgentHQ</span>
+              <span class="row-meta">— HQ where AI agents work and interact</span>
             </div>
             <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -100,26 +101,6 @@
             </svg>
             <span class="underline"></span>
           </a>
-          <a
-            class="row"
-            href="https://github.com/diegraldev/better-zen"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="row-main">
-              <span class="row-name">better-zen</span>
-              <span class="row-meta">— glassmorphic userChrome for Zen Browser</span>
-            </div>
-            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-            </svg>
-            <span class="underline"></span>
-          </a>
-        </div>
-
-        <p class="group-label">linux</p>
-        <div class="rows">
           <a
             class="row"
             href="https://github.com/diegraldev/PlasmaKde-Dynamic-Islands"
@@ -152,16 +133,22 @@
             </svg>
             <span class="underline"></span>
           </a>
-        </div>
-
-        <p class="group-label">mobile</p>
-        <div class="rows">
-          <div class="row">
+          <a
+            class="row"
+            href="https://github.com/diegraldev/better-zen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div class="row-main">
-              <span class="row-name">Tecnibus</span>
-              <span class="row-meta">— React Native app · more info coming soon</span>
+              <span class="row-name">better-zen</span>
+              <span class="row-meta">— glassmorphic userChrome for Zen Browser</span>
             </div>
-          </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
         </div>
       </section>
 
@@ -172,13 +159,15 @@
         </div>
         <div class="stack">
           <span class="stack-key">web</span>
-          <span class="stack-val">HTML · CSS · JavaScript · Next.js · Vite · Tailwind</span>
+          <span class="stack-val">HTML · CSS · JavaScript · Next.js · Tailwind</span>
           <span class="stack-key">app</span>
           <span class="stack-val">React Native · Expo</span>
           <span class="stack-key">tools</span>
-          <span class="stack-val">Git · GitHub · Vercel</span>
+          <span class="stack-val">Git · GitHub · Vercel · Supabase · Java · VS Code</span>
           <span class="stack-key">ai / ml</span>
-          <span class="stack-val">Python · PyTorch · TensorFlow · Claude · Cursor</span>
+          <span class="stack-val">Python · PyTorch · TensorFlow · NumPy · scikit-learn</span>
+          <span class="stack-key">ai tools</span>
+          <span class="stack-val">Claude Code · Cursor · opencode · dsh · Hermes · MCP · skills</span>
         </div>
       </section>
 
@@ -191,5 +180,7 @@
         <span class="footer-note">available for work</span>
       </footer>
     </main>
+
+    <script src="mesh.js" defer></script>
   </body>
 </html>
