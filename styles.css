@@ -89,8 +89,8 @@ p {
   z-index: 0;
 }
 
-/* ── Interactive dot mesh ── */
-.mesh {
+/* ── Hover grain field ── */
+.grain {
   position: fixed;
   inset: 0;
   width: 100%;
