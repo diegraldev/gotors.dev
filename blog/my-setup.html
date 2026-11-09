@@ -6,7 +6,7 @@
     <title>The software I use — diegral blog</title>
     <meta
       name="description"
-      content="The software I use every day: Fedora KDE, my apps and my Zen browser setup."
+      content="The software I use every day: Fedora with niri and Noctalia, my apps, and my trackpad-first setup."
     />
     <meta name="theme-color" content="#050505" />
     <meta name="color-scheme" content="dark" />
@@ -32,27 +32,51 @@
 
       <header class="post-head fade" style="animation-delay: 0.05s">
         <h1>The software I use</h1>
-        <time datetime="2026-10-26">2026-10-26</time>
+        <time datetime="2026-11-08">2026-11-08</time>
       </header>
 
       <article class="prose fade" style="animation-delay: 0.1s">
         <p>
-          A quick rundown of my daily setup: the system, the apps I actually open
-          every day and how my browser is configured. Everything linked to its
+          A quick rundown of the software I use every day: the system, the apps
+          I actually open and how my browser is set up. Everything links to its
           site or GitHub.
+        </p>
+
+        <p>
+          I'm trackpad-first: I barely use a mouse. The whole setup is built to
+          keep my hands on the keyboard and the touchpad — niri for
+          keyboard-driven tiling, and edgepad to turn the touchpad edges into
+          gesture zones for volume, brightness and workspaces.
         </p>
 
         <h2>system</h2>
         <div class="rows">
-          <a
-            class="row"
-            href="https://fedoraproject.org/kde"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="row" href="https://fedoraproject.org" target="_blank" rel="noopener noreferrer">
             <div class="row-main">
-              <span class="row-name">Fedora KDE</span>
+              <span class="row-name">Fedora</span>
               <span class="row-meta">— my daily driver</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://github.com/YaLTeR/niri" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">niri</span>
+              <span class="row-meta">— scrollable-tiling Wayland compositor</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://github.com/noctalia-dev/noctalia" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">Noctalia</span>
+              <span class="row-meta">— Wayland shell built on Quickshell</span>
             </div>
             <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -62,17 +86,17 @@
           </a>
         </div>
         <img
-          src="../public/desktop.png"
-          alt="My Fedora KDE Plasma desktop"
+          src="../public/niri-noctalia.webp"
+          alt="My Fedora niri desktop with the Noctalia shell"
           loading="lazy"
         />
 
         <h2>apps</h2>
         <div class="rows">
-          <a class="row" href="https://getopenscreen.com/" target="_blank" rel="noopener noreferrer">
+          <a class="row" href="https://github.com/assembledev/edgepad" target="_blank" rel="noopener noreferrer">
             <div class="row-main">
-              <span class="row-name">OpenScreen</span>
-              <span class="row-meta">— screen recording, polished demos</span>
+              <span class="row-name">edgepad</span>
+              <span class="row-meta">— touchpad edge gestures</span>
             </div>
             <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -80,10 +104,10 @@
             </svg>
             <span class="underline"></span>
           </a>
-          <a class="row" href="https://opencode.ai" target="_blank" rel="noopener noreferrer">
+          <a class="row" href="https://ghostty.org" target="_blank" rel="noopener noreferrer">
             <div class="row-main">
-              <span class="row-name">opencode</span>
-              <span class="row-meta">— terminal AI coding agent</span>
+              <span class="row-name">Ghostty</span>
+              <span class="row-meta">— terminal</span>
             </div>
             <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -91,26 +115,10 @@
             </svg>
             <span class="underline"></span>
           </a>
-          <a class="row" href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">
+          <a class="row" href="https://github.com/akinomyoga/ble.sh" target="_blank" rel="noopener noreferrer">
             <div class="row-main">
-              <span class="row-name">VS Code</span>
-              <span class="row-meta">— main editor</span>
-            </div>
-            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-            </svg>
-            <span class="underline"></span>
-          </a>
-          <a
-            class="row"
-            href="https://github.com/NousResearch/hermes-agent"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="row-main">
-              <span class="row-name">Hermes</span>
-              <span class="row-meta">— open source AI agent (Nous Research)</span>
+              <span class="row-name">ble.sh</span>
+              <span class="row-meta">— bash line editor</span>
             </div>
             <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -129,12 +137,7 @@
             </svg>
             <span class="underline"></span>
           </a>
-          <a
-            class="row"
-            href="https://github.com/fastfetch-cli/fastfetch"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="row" href="https://github.com/fastfetch-cli/fastfetch" target="_blank" rel="noopener noreferrer">
             <div class="row-main">
               <span class="row-name">fastfetch</span>
               <span class="row-meta">— system info for the terminal</span>
@@ -145,15 +148,98 @@
             </svg>
             <span class="underline"></span>
           </a>
-          <a
-            class="row"
-            href="https://xournalpp.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="row" href="https://github.com/aristocratos/btop" target="_blank" rel="noopener noreferrer">
             <div class="row-main">
-              <span class="row-name">Xournal++</span>
-              <span class="row-meta">— handwritten notes &amp; PDF annotation</span>
+              <span class="row-name">btop</span>
+              <span class="row-meta">— resource monitor</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://opencode.ai" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">opencode</span>
+              <span class="row-meta">— terminal AI coding agent</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">T3 Code</span>
+              <span class="row-meta">— GUI for coding agents</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">VS Code</span>
+              <span class="row-meta">— editor</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">Hermes</span>
+              <span class="row-meta">— open source AI agent (Nous Research)</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://getopenscreen.com" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">OpenScreen</span>
+              <span class="row-meta">— screen recording, polished demos</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://excalidraw.com" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">Excalidraw</span>
+              <span class="row-meta">— diagrams &amp; handwritten notes</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://github.com/crmne/zapfast" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">ZapFast</span>
+              <span class="row-meta">— native WhatsApp client (Rust)</span>
+            </div>
+            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+            <span class="underline"></span>
+          </a>
+          <a class="row" href="https://github.com/crmne/spotifast" target="_blank" rel="noopener noreferrer">
+            <div class="row-main">
+              <span class="row-name">Spotifast</span>
+              <span class="row-meta">— lightweight native Spotify client (Rust)</span>
             </div>
             <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -165,22 +251,6 @@
             <div class="row-main">
               <span class="row-name">Stremio</span>
               <span class="row-meta">— movies &amp; series</span>
-            </div>
-            <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-            </svg>
-            <span class="underline"></span>
-          </a>
-          <a
-            class="row"
-            href="https://github.com/crmne/spotifast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="row-main">
-              <span class="row-name">Spotifast</span>
-              <span class="row-meta">— lightweight native Spotify client (Rust)</span>
             </div>
             <svg class="arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -203,12 +273,7 @@
 
         <h2>browser</h2>
         <div class="rows">
-          <a
-            class="row"
-            href="https://zen-browser.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="row" href="https://zen-browser.app" target="_blank" rel="noopener noreferrer">
             <div class="row-main">
               <span class="row-name">Zen Browser</span>
               <span class="row-meta">— Firefox-based, customizable</span>
@@ -219,58 +284,6 @@
             </svg>
             <span class="underline"></span>
           </a>
-        </div>
-
-        <h2>extensions</h2>
-        <div class="rows">
-          <div class="row">
-            <div class="row-main">
-              <span class="row-name">Bitwarden</span>
-              <span class="row-meta">— password manager</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row-main">
-              <span class="row-name">Video DownloadHelper</span>
-              <span class="row-meta">— download videos from any site</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row-main">
-              <span class="row-name">Librezam</span>
-              <span class="row-meta">— open source song recognition (Shazam)</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row-main">
-              <span class="row-name">uBlock Origin</span>
-              <span class="row-meta">— ad blocker</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row-main">
-              <span class="row-name">Bonjourr</span>
-              <span class="row-meta">— minimalist new tab page</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row-main">
-              <span class="row-name">PocketTube</span>
-              <span class="row-meta">— YouTube subscription manager</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row-main">
-              <span class="row-name">LeechBlock NG</span>
-              <span class="row-meta">— site blocking &amp; focus</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row-main">
-              <span class="row-name">Force Copy</span>
-              <span class="row-meta">— re-enable copy on restricted pages</span>
-            </div>
-          </div>
         </div>
       </article>
 
