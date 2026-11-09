@@ -30,7 +30,7 @@
   let clock = 0;
   let lastMove = 0;
   let boxDirty = true;
-  let avoidBox = true;
+  let enabled = true;
 
   const content = { x: 0, y: 0, w: 0, h: 0 };
   const pointer = {
@@ -68,7 +68,6 @@
   }
 
   function insideBox(x, y) {
-    if (!avoidBox) return false;
     return (
       x > content.x &&
       x < content.x + content.w &&
@@ -174,10 +173,28 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
     const area = width * height;
-    avoidBox = width >= 720;
-    maxParticles = width < 720 ? 900 : area > 2000000 ? 1600 : 2200;
+    enabled = width >= 720;
+    maxParticles = area > 2000000 ? 1600 : 2200;
 
     measure();
+
+    if (!enabled) stop();
+    else clear();
+  }
+
+  function stop() {
+    if (raf) {
+      cancelAnimationFrame(raf);
+      raf = 0;
+    }
+
+    for (let i = 0; i < particles.length; i++) pool.push(particles[i]);
+
+    particles = [];
+    pointer.active = false;
+    pointer.inside = false;
+    trail.x = -1;
+    trail.y = -1;
     clear();
   }
 
@@ -353,6 +370,7 @@
   }
 
   function onMove(event) {
+    if (!enabled) return;
     if (boxDirty) measure();
 
     const now = performance.now();
@@ -408,6 +426,7 @@
   }
 
   function onDown(event) {
+    if (!enabled) return;
     if (boxDirty) measure();
 
     pointer.x = event.clientX;
