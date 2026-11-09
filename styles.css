@@ -186,6 +186,22 @@ p {
   color: var(--text);
 }
 
+.title-link {
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.title-link:hover {
+  color: var(--accent);
+}
+
+.section-note {
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+  text-align: right;
+}
+
 
 /* ── Rows (links + static items) ── */
 .rows {
